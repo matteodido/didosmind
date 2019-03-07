@@ -1,3 +1,88 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL                   = "https://matteodido.github.io"
+builddrafts                = false
+languageCode               = "zn-Hans"
+canonifyurls               = true
+contentdir                 = "content"
+layoutdir                  = "layouts"
+publishdir                 = "public"
+enableEmoji                = true
+hasCJKLanguage             = true
+summaryLength              = 50
+Paginate                   = 3
+
+theme                      = "AllinOne"
+title                      = "Dido's Mind"
+
+pygmentsuseclasses         = true
+
+
+[permalinks]
+  blog                     = "blog/:year-:month/:slug/"
+
+
+[taxonomies]
+  tag                      = "tags"
+  series                   = "series"
+  category                 = "categories"
+
+
+[menu]
+  [[menu.main]]
+    name                   = "Blog"
+    weight                 = -120
+    identifier             = "blog"
+    url                    = "blog/"  
+
+  [[menu.main]]
+    name                   = "Raccolta foto"
+    weight                 = -110
+    identifier             = "foto"
+    url                    = "foto/" 
+
+  [[menu.main]]
+    name                   = "Scopo"
+    weight                 = -100
+    identifier             = "scopo"
+    url                    = "scopo/"  
+
+ 
+
+[params]
+  faviconfile              = "img/Logo.png"               # from static/
+  avatar                   = "img/fotoProfilo.jpg"             # path to image in static dir e.g img/avatar.png 
+  author                   = "Dido's Mind"
+  description              = ["Cogito ergo sum", "Un posto dove riporre le idee.", "E cercarne di nuove."]           # appears in the site header when set to a non-empty string
+  welcome_head             = "Benvenuti nella mia testa!"
+  welcome_word             = "~ E'molto spaziosa, ma per lo più è spazio vuoto ~"
+
+  latestpostscount         = 3                            # how many posts to display on the home page
+  bloggroupby              = 'month'
+  dateform                 = "2 Jan, 2006"
+  dateformfull             = "02-01-2006  Monday  15:04:05"
+  noshowreadtime           = false                         # if true, don't show "<x> minutes read" in posts
+
+  # slides
+  slidesDirPath            = "themes/AllinOne/static/img/header-slides"    # path to image in local dir (path for hugo)
+  slidesDirPathURL         = "img/slideImmagini/"    # path to image in static dir (for static pages)
+
+  # highlighting 
+  highlightjs              = true
+
+  #latex
+  katex                    = true
+
+  # links
+  email                    = "matteo267@gmail.com"
+  github                   = "https://github.com/matteodido?tab=repositories"
+  #linkedin                 = "//linkedin.com/in/you"
+  facebook                 = "https://www.facebook.com/matteo.didone.3"
+  #googleplus               =""
+  #twitter                  = "//twitter.com/you" 
+  #px500                    = "//px500"
+  instagram                = "https://www.instagram.com/_matteo.dido"
+  #include_rss              = true                          # include RSS <link> tag in <head> and show RSS icon
+  
+  # analytics
+  #googleAnalytics          = "your-google-analytic-id"
+    
+    
